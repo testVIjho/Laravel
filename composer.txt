@@ -1,0 +1,74 @@
+1. Composer na enna?
+Composer = PHP dependency manager.
+
+Simple-aa sonna, Laravel project-ku thevaiyana PHP packages/libraries-ah install, update, manage panna use panra tool.
+Example
+Laravel framework
+Authentication package
+Payment package
+PDF generation package
+Excel package
+HTTP client package
+
+2. "Dependency" na enna?
+Suppose namma project-ku PDF generate pannanum.
+
+Adhuku oru PHP package use panrom.
+
+Andha PDF package-ku vera oru package thevaipadalam.
+
+3. Laravel-ku Composer yen thevai?
+Laravel install pannumbodhu, Laravel-ku thevaiyana neraya PHP packages irukkum.
+
+
+
+Laravel
+ ├── Symfony packages
+ ├── Carbon
+ ├── Monolog
+ ├── Guzzle
+ ├── various Laravel components
+ └── many other dependencies
+
+4. composer.json na enna?
+Indha project-ku enna PHP packages venum?"
+
+nu Composer-kku sollra configuration file.
+
+{
+    "require": {
+        "laravel/framework": "...",
+        "guzzlehttp/guzzle": "..."
+    }
+}
+5. composer.lock na enna?
+composer.lock exact-aa enna versions install aachu nu lock pannum.
+
+
+composer.json
+    ↓
+Laravel 12.x venum
+
+6. vendor folder na enna?
+
+Composer packages install pannumbodhu:
+
+vendor/folder create aagum.
+Adhukkulla Composer install panna packages irukkum.
+
+my-laravel-project/
+│
+├── app/
+├── routes/
+├── resources/
+├── config/
+├── composer.json
+├── composer.lock
+└── vendor/
+      ├── laravel/
+      ├── symfony/
+      ├── guzzle/
+      ├── monolog/
+      └── ...
+
+So vendor folder = Composer install pannina PHP dependencies irukkura place.
