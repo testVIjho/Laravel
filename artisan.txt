@@ -1,0 +1,63 @@
+Controller
+php artisan make:controller StudentController
+
+Model
+php artisan make:model Student
+
+Model + Migration
+php artisan make:model Student -m
+
+Migration
+php artisan make:migration create_students_table
+
+Middleware
+php artisan make:middleware CheckAdmin
+
+Form Request
+php artisan make:request StoreStudentRequest
+
+Laravel project-la routes
+php artisan route:list
+
+Database-related Artisan Commands
+
+Migration run
+php artisan migrate
+
+Migration rollback
+php artisan migrate:rollback
+
+Migration status
+php artisan migrate:status
+
+Seeder
+
+Database-ல் sample/default data insert செய்ய
+php artisan db:seed
+
+migrate:fresh
+php artisan migrate:fresh
+
+Cache Commands
+
+Cache clear:
+php artisan cache:clear
+
+Configuration cache clear:
+php artisan config:clear
+
+Route cache clear:
+php artisan route:clear
+
+View cache clear:
+php artisan view:clear
+
+php artisan tinker
+Student::all();
+Database-ல students data என்ன இருக்கிறது என்று directly பார்க்கலாம்.
+Student::find(1);
+
+php artisan list
+php artisan help migrate
+php artisan help make:model
+available options
