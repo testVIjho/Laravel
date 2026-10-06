@@ -1,0 +1,22 @@
+1. Bootstrap install பண்ணுங்க
+Laravel project terminal-ல்:
+
+npm install bootstrap @popperjs/core
+
+2. resources/js/app.js
+import 'bootstrap';
+
+3. resources/css/app.css
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+4. home.blade.php
+<head>-ல்:
+
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+
+5. Vite run பண்ணணும்
+npm run dev
+
+பிறகு Laravel server:
+
+php artisan serve
