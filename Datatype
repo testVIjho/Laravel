@@ -1,0 +1,30 @@
+Database	 Datatype	Laravel Migration Method	Example	Use
+VARCHAR		string()	$table->string('name');	Name, email, title
+TEXT		text()		$table->text('description');	Long text
+CHAR		char()		$table->char('code', 5);	Fixed-length text
+INTEGER		integer()	$table->integer('age');	Whole numbers
+BIGINT		bigInteger()	$table->bigInteger('user_id');	Large whole numbers
+TINYINT		tinyInteger()	$table->tinyInteger('status');	Small numbers / flags
+SMALLINT	smallInteger()	$table->smallInteger('rank');	Small-range numbers
+MEDIUMINT	mediumInteger()	$table->mediumInteger('points');	Medium-range numbers
+
+DECIMAL		decimal()	$table->decimal('price', 10, 2);	Money / exact decimals
+FLOAT		float()		$table->float('rating');	Floating-point values
+DOUBLE		double()	$table->double('distance');	More precision
+BOOLEAN		boolean()	$table->boolean('active');	true/false
+DATE		date()		$table->date('dob');	Date only
+DATETIME	dateTime()	$table->dateTime('start_at');	Date + time
+TIMESTAMP	timestamp()	$table->timestamp('created_at');	Timestamp
+TIME		time()		$table->time('start_time');	Time only
+YEAR		year()		$table->year('joining_year');	Year
+JSON		json()		$table->json('settings');	JSON data
+BINARY		binary()	$table->binary('file_data');	Binary data
+
+
+Seeder Concept For Testing Data
+
+php artisan make:seeder StudentSeeder
+
+php artisan make:factory StudentFactory --model=Student
+
+php artisan db:seed
